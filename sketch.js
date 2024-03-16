@@ -21,7 +21,7 @@ let alpha = 50; // how opaque is the tracing system
 let trace = false; // are we tracing?
 
 function setup() {
-  createCanvas(710, 400);
+  createCanvas(1200, 700);
 
   rad = height / 4; // compute radius for central circle
   background(204); // clear the screen
