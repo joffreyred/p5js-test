@@ -21,7 +21,7 @@ let alpha = 50; // how opaque is the tracing system
 let trace = false; // are we tracing?
 
 function setup() {
-  createCanvas(1200, 700);
+  createCanvas(1300, 700);
 
   rad = height / 4; // compute radius for central circle
   background(204); // clear the screen
@@ -53,7 +53,7 @@ function draw() {
     let radius = rad / (i + 1); // radius for circle itself
     rotate(sines[i]); // rotate circle
     if (!trace) ellipse(0, 0, radius * 2, radius * 2); // if we're simulating, draw the sine
-    push(); // go up one level
+    push(); // go up onse level
     translate(0, radius); // move to sine edge
     if (!trace) ellipse(0, 0, 5, 5); // draw a little circle
     if (trace) ellipse(0, 0, erad, erad); // draw with erad if tracing
